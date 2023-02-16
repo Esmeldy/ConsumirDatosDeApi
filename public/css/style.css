@@ -1,0 +1,127 @@
+body {
+    background-image: url('../img/book.jpg');
+    width: 90vw;
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    height: 25vh;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.container__links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+    
+}
+.container__links li {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 7px 0 7px 0;
+    background-color: rgba(254, 254, 254, 0.663);
+    cursor: pointer;
+    
+}
+.container__link a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px black; 
+}
+
+.container__links li:hover {
+    background-color: #54595d;
+    transition: 500ms;
+}
+
+.indexTable  {
+    width: 100%;
+    text-align: justify;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+}
+.indexTable__title{
+    font-size: 1.5em;
+    border-bottom: 1px solid;
+    text-align: center;
+    padding: 5px 20px;
+    background: rgb(252,252,252);
+    background: linear-gradient(190deg, rgba(252,252,252,1) 21%, rgba(0,0,0,0.5298494397759104) 100%);
+    border-radius: 5px 5px 0 0;
+}
+
+.indexTable__content {
+    font-size: 1.2em;
+    padding: 10px;
+    
+}
+.indexTable__content a {
+    text-decoration: none;
+    width: 50px;
+    height: 10px;
+    padding: 10px;
+}
+.indexTable__content td span{
+    font-size: 1.2em;
+}
+
+.indexTable__content a:active {
+    color: white;
+}
+
+
+.indexTable__content a:hover{
+    transition: 500ms;
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+
+.indexTable__div {
+    margin: 0px auto;
+    width: 39vw;
+    font-size: 1.5em;
+}
+
+.containerDatos {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.containerDatos h4 {
+    
+    color: #aa7b50;
+    font-size: 1.8em;
+    text-align: left;
+    text-shadow: -1px 0px white;
+}
+.containerDatos p strong {
+    letter-spacing: 2.2px;
+    padding: 10px;
+}
+
+.containerDatos p {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.containerDatos p a{
+    text-decoration: none;
+    width: 50px;
+    height: 10px;
+    padding: 10px;
+    
+}
+.containerDatos p a:hover {
+    transition: 500ms;
+    color: white;
+    border-bottom: 1px solid white;
+}

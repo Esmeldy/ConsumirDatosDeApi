@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Libros por autor{% endblock %}
+
+{% block body %}
+    {# {{ dump(librosDeAutor)}} #}
+    {% set nombre="" %}
+    {% set apellidos="" %}
+    {% set nacionalidad="" %}
+    
+    <div class="containerMain">
+        <table class="indexTable">
+            {% for libro in librosDeAutor %}
+                {% set nombre=libro.nombre %}
+                {% set apellidos=libro.apellidos %}
+                {% set nacionalidad=libro.nacionalidad %}
+            {% endfor %}
+            <div class="indexTable__div" >
+                <p>Nombre: {{nombre}}</p>
+                <p>Apellidos: {{apellidos}}</p>
+                <p>Nacionalidad: {{nacionalidad}}</p>
+                <p>Libros Publicados</p>
+    
+            </div>
+            
+            
+            
+            {% for libro in librosDeAutor %}
+    
+            <tr class="indexTable__content">
+                <td><span>{{libro.titulo}}</span></td> 
+                <td ><a href="/datoslibro/{{libro.id}}">Ver Datos del libro</a></td> 
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

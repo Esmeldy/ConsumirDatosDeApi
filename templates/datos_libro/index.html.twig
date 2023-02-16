@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DatosLibroController!{% endblock %}
+
+{% block body %}
+    <div class="containerDatos">
+        <h4>Datos del Libro</h4>
+        <p><strong>Título</strong>: {{ Libro.titulo }} 
+           <strong>Fecha de Publicación:</strong>
+           {{ Libro.f_publicacion }}  <a href="/librosdeautor/{{Libro.id_autor}}"> Ver Autor</a>
+        </p> 
+    </div>
+    
+{% endblock %}

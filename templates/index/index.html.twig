@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de Autores{% endblock %}
+
+{% block body %}
+    <table class="indexTable">
+        <tr>
+            <th  class="indexTable__title">Nombre</th>
+            <th  class="indexTable__title">Apellidos</th>
+            <th  class="indexTable__title">Pais</th>
+            <th  class="indexTable__title">Libros del Autor</th>
+        </tr>
+        
+        {# {{ dump(listaAutores) }} #}
+        {% for Autores in listaAutores %}
+        <tr>
+               <td class="indexTable__content">{{Autores.nombre}}</td> 
+               <td class="indexTable__content">{{Autores.apellidos}}</td> 
+               <td class="indexTable__content">{{Autores.nacionalidad}}</td> 
+               <td class="indexTable__content"><a href="/librosdeautor/{{Autores.id}}">Libros</a></td> 
+            
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
